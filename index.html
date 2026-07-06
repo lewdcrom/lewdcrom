@@ -766,7 +766,7 @@
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this)"><span>How long will my commission take?</span><span class="faq-icon">+</span></div>
-      <div class="faq-a"><div class="faq-a-inner">Delivery is typically between 5 and 15 days depending on complexity and my current queue. I'll give you an estimated timeframe when confirming your slot.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Delivery is typically between 7 and 30 days depending on complexity and my current queue. I'll give you an estimated timeframe when confirming your slot.</div></div>
     </div>
   </section>
 
@@ -1011,7 +1011,7 @@
     // Delivery estimate
     const detail = sel.detail || 'rendered';
     const hasComic = simplePanels > 0 || complexPanels > 0;
-    const deliveryMap = { sketch:'1–3 days', flat:'3–5 days', rendered:'5–7 days', full_rendered:'5–9 days' };
+    const deliveryMap = { sketch:'1–3 days', flat:'3–5 days', rendered:'7–15 days', full_rendered:'10–17 days' };
     let delivery = deliveryMap[detail] || '5–7 days';
     if (hasComic) delivery = '7–15 days';
     const de = document.getElementById('calcDelivery');
